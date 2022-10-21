@@ -1,17 +1,23 @@
 <template>
-  <van-button>添加</van-button>
-  <div class="test">asdf</div>
+  <div class="root">
+    <TopNav />
+    <router-view></router-view>
+    <bottomNav />
+  </div>
 </template>
 
 <script setup>
 import { Dialog } from 'vant';
 import { ref } from 'vue';
-const VanDialog = Dialog.Component;
-const show = ref(true)
+import bottomNav from './components/bottomNav.vue'
+import TopNav from './components/topNav.vue';
+
+
+
 </script>
 
 <style lang="scss" scoped>
-.test {
-  color: $primary;
+.root {
+  background-color: #E1E4E8;
 }
 </style>

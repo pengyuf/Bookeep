@@ -13,15 +13,15 @@ export default defineConfig({
     Components({
       resolvers: [VantResolver()]
     }),
-    viteVConsole({
-      entry: pathResolve('src/main.js'),
-      localEnabled: true,
-      enabled: false,
-      config: {
-        maxLogNumber: 1000,
-        theme: 'dark',
-      },
-    }),
+    // viteVConsole({
+    //   entry: pathResolve('src/main.js'),
+    //   localEnabled: true,
+    //   enabled: false,
+    //   config: {
+    //     maxLogNumber: 1000,
+    //     theme: 'dark',
+    //   },
+    // }),
   ],
   resolve: {
     alias: {
